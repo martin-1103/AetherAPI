@@ -1,0 +1,7 @@
+{
+  "name": "api-manager-electron",
+  "version": "1.0.0",
+  "description": "Electron wrapper for API Manager",
+  "main": "main.js",
+  "type": "commonjs"
+}

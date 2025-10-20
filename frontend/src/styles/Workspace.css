@@ -1,0 +1,159 @@
+.workspace {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E1E1E;
+  overflow-y: auto;
+}
+
+.workspace-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #3E4451;
+  background-color: #252526;
+}
+
+.endpoint-name-input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.active-users {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-count {
+  font-size: 12px;
+  color: #4CAF50;
+}
+
+.user-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #FF6C37;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.save-button {
+  padding: 8px 16px;
+  background-color: #007ACC;
+  color: white;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.request-config {
+  padding: 20px;
+}
+
+.request-line {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.request-line select {
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.url-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.send-button {
+  padding: 10px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.send-button:hover {
+  background-color: #45A049;
+}
+
+.send-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid #3E4451;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #D4D4D4;
+  font-size: 13px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab:hover {
+  background-color: #2E3440;
+}
+
+.tab.active {
+  color: #FF6C37;
+  border-bottom-color: #FF6C37;
+}
+
+.tab-content {
+  min-height: 300px;
+}
+
+.headers-section, .body-section, .description-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-row {
+  display: flex;
+  gap: 12px;
+}
+
+.header-row input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.body-editor, .description-editor {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  resize: vertical;
+}
+
+.body-editor {
+  font-family: 'JetBrains Mono', monospace;
+}

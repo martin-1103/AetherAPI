@@ -1,0 +1,22 @@
+{
+  "name": "api-manager-desktop",
+  "version": "1.0.0",
+  "description": "Desktop-first API management application with real-time collaboration",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run electron\"",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "electron": "wait-on http://localhost:5000 && electron electron/main.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build"
+  },
+  "keywords": ["api", "postman", "electron", "collaboration"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^28.0.0",
+    "wait-on": "^7.2.0"
+  }
+}
