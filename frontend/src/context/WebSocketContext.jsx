@@ -27,7 +27,7 @@ export function WebSocketProvider({ children }) {
   }, [token]);
 
   const connectWebSocket = () => {
-    const socket = new WebSocket('ws://localhost:3000/ws');
+    const socket = new WebSocket('ws://localhost:3001/ws');
 
     socket.onopen = () => {
       console.log('WebSocket connected');

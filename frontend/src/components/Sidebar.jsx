@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/Sidebar.css';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'http://localhost:3001/api';
 
 function Sidebar({ selectedProject, setSelectedProject, selectedEndpoint, setSelectedEndpoint }) {
   const [projects, setProjects] = useState([]);

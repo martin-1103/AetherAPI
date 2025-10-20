@@ -12,7 +12,7 @@ export function AuthProvider({ children }) {
   const [token, setToken] = useState(localStorage.getItem('token'));
   const [loading, setLoading] = useState(true);
 
-  const API_URL = 'http://localhost:3000/api';
+  const API_URL = 'http://localhost:3001/api';
 
   useEffect(() => {
     if (token) {

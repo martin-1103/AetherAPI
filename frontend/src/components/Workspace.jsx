@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useWebSocket } from '../context/WebSocketContext';
 import '../styles/Workspace.css';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'http://localhost:3001/api';
 
 function Workspace({ selectedProject, selectedEndpoint, setSelectedEndpoint, setResponse }) {
   const [name, setName] = useState('');
